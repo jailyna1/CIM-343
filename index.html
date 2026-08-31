@@ -11,21 +11,35 @@
 
         <!-- This meta tag encodes my characters and is used by the browser -->
         <meta charset="UTF-8">
+        <style>
+            body {
+                background-color: gainsboro;
+
+            }
+        </style>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!-- Body: The visible content of the page -->
         <header>
             <h1>Video Games</h1>
-            <nav> </nav> <!-- navigation typically goes inside header -->
+            <nav> 
+                <ul>
+                    <li><a href="#origins">Origins</a></li>
+                    <li><a href="#favorite-genres">Favorite Games Genres</a></li>
+                    <li><a href="#favorite-games">Favorite Games</a></li>
+                    <li><a href="page2.html">Page 2</a></li>
+                </ul>
+            </nav> <!-- navigation typically goes inside header -->
         </header>
         <main>
             <section>
-                <h2>Origins</h2>
+                <h2 id="origins">Origins</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
             </section>
             <section>
-                <h3>Favorite Games Genres</h3>
+                <h3 id="favorite-genres">Favorite Games Genres</h3>
                 <ol>
                     <li>Action</li>
                     <li>Adventure</li>
@@ -35,7 +49,7 @@
                 </ol>
             </section>
             <section> 
-                <h4>Favorite Games</h4>
+                <h4 id="favorite-games">Favorite Games</h4>
                 <ul>
                     <li>Elden Ring</li>
                     <li>Last of Us</li>
@@ -43,7 +57,7 @@
                 </ul>
             </section>
             <section>
-                <h5>Inline Tags</h5>
+                <h5 id="inline-tags">Inline Tags</h5>
 
                 <!-- No difference between <strong> and <b> -->
                 <p>This is a <strong>strong</strong> tag</p>
@@ -61,14 +75,14 @@
                 <p>This is a <code>code</code> tag</p>
                 <p>This is a <sub>subscript</sub> tag</p>
                 <p>This is a <sup>superscript</sup> tag</p>
-
+<!-- 
                 <p>This is a <a href="https://www.google.com" target="_blank">link</a> tag</p>
 
                 <p>This <a href="https://images.pexels.com/photos/7773745/pexels-photo-7773745.jpeg" target="_blank">link goes to an image of...</a></p>
 
                 <p>This is an image of a controller using an absolute link: <img src="https://images.pexels.com/photos/7773745/pexels-photo-7773745.jpeg" alt="Controller"></p>
 
-                <p>This is an image of a controller using a relative link: <img src="img/video-game-controller.jpg" alt="Game controller"></p>
+                <p>This is an image of a controller using a relative link: <img src="img/video-game-controller.jpg" alt="Game controller"></p>  -->
             </section>
         </main>
         <footer></footer>
