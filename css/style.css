@@ -7,3 +7,12 @@ h1 {
     background-color: #ffffff;
     text-align: center;
 }
+
+h2{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+h3 {
+    color: plum;
+}
