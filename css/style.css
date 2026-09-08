@@ -3,6 +3,11 @@ body {
     background-color: rgba(255, 0, 0, 1.0);
 }
 
+h1,h2,h3{
+    font-family: "Roboto",fantasy;
+    font-weight: 200;
+}
+
 h1 {
     background-color: #ffffff;
     text-align: center;
@@ -15,4 +20,23 @@ h2{
 
 h3 {
     color: plum;
+}
+
+li {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+ul li{
+    background-color: aquamarine;
+}
+
+ol li{
+    list-style: lower-greek;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
 }
