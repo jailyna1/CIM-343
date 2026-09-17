@@ -74,17 +74,13 @@ footer {
     margin: 0 auto;
 }
 
-.inline {
-    display: inline;
-}
-
 nav {
     background-color: #ffffff;
     height: 100px;
 }
 
 nav > ul {
-    height: 100px;
+    height: 150px;
     margin-left:-40px;
     display: grid;
     grid-template-columns: 100px 100px 100px 100px;
@@ -92,15 +88,41 @@ nav > ul {
     gap: 20px;
     justify-content: space-between;
     align-content:center;
+    align-items: center;
+    justify-items: center;
 } 
 
 nav > ul > li {
     list-style: none;
+    padding: 30px;
 }
 
 nav > ul > li > a {
-
+    text-decoration: none;
 }
 
 nav > ul > li > a:hover {
+    background-color: blanchedalmond;
+}
+
+.inline {
+    display: inline;
+}
+
+.bgimage{
+    background-image: url("../img/video-game-controller.jpg");
+    /* height: 400px; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-template-columns: 200px;
+    grid-template-rows: 100px;
+    justify-items: center;
+    align-content: center;
+    font-size: 50px;
+}
+
+.imagegallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }
