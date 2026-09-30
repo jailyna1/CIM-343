@@ -9,11 +9,41 @@
 
     <script src="js/gs.js" defer></script>
     <script src="js/clicking.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+    <script src="js/form.js" defer></script>
 </head>
 <body>
     <h1 id="heading1"></h1>
     <div id="redClick">
         <p>Click me!</p>
     </div>
+
+    <button id="next">Next</button>
+    <button id="previous">Previous</button>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <div>
+        <div id="gallery">
+            <img src="images/image1.jpg" alt="Image 1">
+            <img src="images/image2.jpg" alt="Image 2">
+            <img src="images/image3.jpg" alt="Image 3">
+        </div>
+    </div>
+
+    <section>
+        <h3>Choose your favorite animal:</h3>
+        <form>
+            <label>Animal:</label>
+            <select name="animals" id="animal">
+                <option value="koala">Koala</option>
+                <option value="gorilla">Gorilla</option>
+                <option value="zebra">Zebra</option>
+                <option value="tiger">Tiger</option>
+            </select>
+           <button id="submit" type="button">Submit</button>
+        </form>
+        <div id="addImages"></div>
+    </section>
 </body>
 </html>
