@@ -28,15 +28,15 @@ h2 {
 
 .title-cap {
     text-decoration: #3b5547 underline;
-    text-underline-offset: 25px;
+    text-underline-offset: 5px;
 }
 
 .navi-bar > ul {
     margin-left:-40px;
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 150px 150px;
-    grid-template-rows: 30px;
+    grid-template-columns: 150px;
+    grid-template-rows: 30px 30px 30px 30px;
     gap:10%;
     justify-content:center;
     align-content:center;
@@ -62,7 +62,7 @@ h2 {
 
 main {
     position: relative;
-    margin-top: 45px;
+    padding-top: 25px;
 }
 
 .intro {
