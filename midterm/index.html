@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Class Schedule Organization</title>
 
@@ -7,66 +7,103 @@
         <meta name="author" content="Jailyn M">
         <meta name="keywords" content="class, semester, organization">
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/style.css" media="(min-width: 480px)">
         <link rel="stylesheet" href="css/mobile.css" media="(max-width: 479px)"> 
     </head>
     <body>
-        <section class="head-section">
-            <section class="title-section">
-                <img src="../img/books.png" width="100">
-                <h1 class="title-cap">Class Schedule - Keep Your Calendar Organized</h1>
-            </section>
+        <header class="site-header">
+            <div class="title-section">
+                <img src="../img/books.png" alt="Books icon" width="100">
+                <div>
+                    <h1>Class Schedule</h1>
+                    <p>Keep Your Calendar Organized</p>
+                </div>
+            </div>
+
             <nav class="navi-bar">
-                <ul class="li-nav">
-                    <li class="li-nav-el">Calendar</li>
-                    <li class="li-nav-el">Classes</li>
-                    <li class="li-nav-el">Extracurriculars</li>
-                    <li class="li-nav-el">To-DO</li>
+                <ul>
+                    <li><a href="#calendar">Calendar</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#extracurriculars">Extracurriculars</a></li>
+                    <li><a href="#todo">To-Do</a></li>
                 </ul>
             </nav>
-        </section>
-        
-        <section class="content">
-            <p class="description">
-                This all-in-one platform empowers students and faculty to manage their academic, professional, and extracurricular activities from a single dashboard. By combining scheduling, course management, campus engagement, and task organization, the tool provides a seamless and efficient way to stay informed, connected, and productive throughout the academic year.
-            </p>
-            <section class="cal-section">
-                <img src="../img/calendar.png" width="50px">
-                <h3>Calendar</h3>
-                <p>
-                  Stay organized with an integrated calendar that helps students and faculty keep track of important dates, events, and schedules. Users can view class timetables, assignment deadlines, exams, meetings, and campus events in one centralized location. The calendar supports reminders, notifications, and scheduling tools to ensure users never miss an important commitment.  
-                </p>
-            </section>
-            <section class="class-section">
-                <img src="../img/classes.png" width="50px">
-                <h3>Classes</h3>
-                <p>
-                    Manage academic courses with ease through the Classes section. Students can access course information, view syllabi, track assignments, monitor grades, and stay updated on announcements from instructors. Faculty can organize course materials, communicate with students, post assignments, and manage important academic resources, creating a streamlined learning experience for everyone.
-                </p>
-            </section>
-            <section class="extra-section">
-                <img src="../img/extra.png" width="50px">
-                <h3>Extracurriculars</h3>
-                <p>
-                    Explore and participate in campus life beyond the classroom. The Extracurriculars section allows users to discover student organizations, clubs, workshops, volunteer opportunities, and university events. Students can track their involvement, register for activities, receive event updates, and build a more engaging and connected campus experience.
-                </p>
-            </section>
-            <section class="do-section">
-                <img src="../img/agenda.png" width="50px">
-                <h3>To-DO</h3>
-                <p>
-                    Boost productivity with a personalized task management system designed to help users stay on top of their responsibilities. Create and organize tasks, set priorities, establish deadlines, and track progress for assignments, projects, meetings, and personal goals. Smart reminders and progress tracking help ensure that important tasks are completed on time and efficiently.
-                </p>
-                <form>
+        </header>
 
-                </form>
+        <main>
+            <section class="hero">
+                <h2>Stay Organized. Stay Ahead.</h2>
+                <p>
+                    Manage your classes, assignments, events, and
+                    extracurricular activities from one place.
+                </p>
             </section>
-        </section>
-        
-        
+
+            <!-- Dashboard Overview / Quick Nav -->
+            <section class="dashboard">
+                <article class="dashboard-card">
+                    <img src="../img/calendar.png" alt="Calendar icon">
+                    <h2>Calendar</h2>
+                    <p>Keep track of important dates, events, exams, meetings, and deadlines.</p>
+                    <a href="#calendar" class="button">Go to Calendar</a>
+                </article>
+
+                <article class="dashboard-card">
+                    <img src="../img/classes.png" alt="Classes icon">
+                    <h2>Classes</h2>
+                    <p>Manage courses, assignments, grades, syllabi, and announcements.</p>
+                    <a href="#classes" class="button">Go to Classes</a>
+                </article>
+
+                <article class="dashboard-card">
+                    <img src="../img/extra.png" alt="Extracurricular icon">
+                    <h2>Extracurriculars</h2>
+                    <p>Discover clubs, organizations, workshops, and campus events.</p>
+                    <a href="#extracurriculars" class="button">Go to Activities</a>
+                </article>
+
+                <article class="dashboard-card">
+                    <img src="../img/agenda.png" alt="To-do icon">
+                    <h2>To-Do</h2>
+                    <p>Create tasks, set priorities, and track your progress.</p>
+                    <a href="#todo" class="button">Go to Tasks</a>
+                </article>
+            </section>
+
+            <!-- Section 1: Calendar -->
+            <section id="calendar" class="content-section">
+                <h2>Calendar</h2>
+                <p>Keep track of important dates, events, exams, meetings, and deadlines.</p>
+                <!-- Add your detailed calendar content, schedule tables, or embeds here -->
+            </section>
+
+            <!-- Section 2: Classes -->
+            <section id="classes" class="content-section">
+                <h2>Classes</h2>
+                <p>Manage courses, assignments, grades, syllabi, and announcements.</p>
+                <!-- Add course lists, syllabus links, or assignment tables here -->
+            </section>
+
+            <!-- Section 3: Extracurriculars -->
+            <section id="extracurriculars" class="content-section">
+                <h2>Extracurriculars</h2>
+                <p>Discover clubs, organizations, workshops, and campus events.</p>
+                <!-- Add club details, event schedules, or sign-up info here -->
+            </section>
+
+            <!-- Section 4: To-Do -->
+            <section id="todo" class="content-section">
+                <h2>To-Do List</h2>
+                <p>Create tasks, set priorities, and track your progress.</p>
+                <!-- Add your task list or interactive checklist here -->
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>2026 Class Schedule Organization</p>
+        </footer>
     </body>
-    <footer>
-
-    </footer>
 </html>

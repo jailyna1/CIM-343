@@ -1,0 +1,318 @@
+/* ==========================================================================
+   1. Base & Reset
+   ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #DCEAF7; /* Soft icy blue background */
+    color: #0f172a;
+    font-family: 'Monaco', 'Courier New', monospace;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   2. Header & Sticky Navigation
+   ========================================================================== */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: #8ECAE6; /* Medium ocean blue */
+    padding: 20px;
+    border-bottom: 3px solid #219EBC;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.title-section img {
+    width: 60px;
+    height: auto;
+    border: 3px solid #023047;
+    border-radius: 8px;
+}
+
+.title-section h1 {
+    color: #023047;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font-size: 1.8rem;
+    text-decoration: #023047 underline;
+    text-underline-offset: 8px;
+}
+
+.title-section p {
+    color: #124057;
+    font-size: 0.95rem;
+}
+
+/* Navigation Bar */
+.navi-bar > ul {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navi-bar a {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #023047;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.navi-bar a:visited {
+    color: #023047;
+}
+
+.navi-bar a:hover {
+    background-color: #DCEAF7;
+    font-size: 18px;
+    color: #011627;
+}
+
+/* ==========================================================================
+   3. Main Content & Sections
+   ========================================================================== */
+main {
+    flex: 1;
+    max-width: 1100px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #219EBC;
+    color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #DCEAF7;
+    font-size: 1rem;
+}
+
+/* Dashboard Grid Layout */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+    background-color: #8ECAE6;
+    color: #023047;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #219EBC;
+    transition: transform 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    scroll-margin-top: 180px;
+}
+
+.dashboard-card img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border: 2px solid #023047;
+    border-radius: 8px;
+    background-color: #DCEAF7;
+    padding: 5px;
+}
+
+.dashboard-card h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #023047;
+    background-color: #DCEAF7;
+    width: 100%;
+    padding: 4px 0;
+    border-radius: 6px;
+}
+
+.dashboard-card p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Hover Accent Colors per Card */
+#calendar:hover { color: #ffffff; border-color: #00B4D8; transform: translateY(-4px); }
+#classes:hover { color: #fff3b0; border-color: #fff3b0; transform: translateY(-4px); }
+#extracurriculars:hover { color: #f4c2c2; border-color: #f4c2c2; transform: translateY(-4px); }
+#todo:hover { color: #e0aaff; border-color: #e0aaff; transform: translateY(-4px); }
+
+/* ==========================================================================
+   4. Buttons & Links
+   ========================================================================== */
+.button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #023047;
+    color: #DCEAF7 !important;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #219EBC;
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   5. Sticky Footer
+   ========================================================================== */
+footer {
+    background-color: #8ECAE6;
+    color: #023047;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    font-weight: bold;
+    border-top: 3px solid #219EBC;
+}
+
+/* ==========================================================================
+   6. Mobile Layout (< 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* Header Adjustments */
+    .site-header {
+        padding: 12px 10px;
+    }
+
+    .title-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    .title-section img {
+        width: 48px;
+    }
+
+    .title-section h1 {
+        font-size: 1.4rem;
+        text-underline-offset: 4px;
+    }
+
+    .title-section p {
+        font-size: 0.85rem;
+    }
+
+    /* Scrollable Horizontal Navigation for Small Screens */
+    .navi-bar > ul {
+        display: flex;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 6px;
+        gap: 8px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .navi-bar a {
+        font-size: 14px;
+        padding: 6px 10px;
+        white-space: nowrap;
+        background-color: rgba(2, 48, 71, 0.08);
+    }
+
+    .navi-bar a:hover {
+        font-size: 14px; /* Prevent layout shift on small screens */
+    }
+
+    /* Main Container Padding */
+    main {
+        width: 92%;
+        margin: 20px auto;
+    }
+
+    /* Hero Section Adjustments */
+    .hero {
+        padding: 18px 14px;
+        margin-bottom: 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.25rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    /* Stack Dashboard Cards in 1 Column */
+    .dashboard {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .dashboard-card {
+        padding: 16px;
+        scroll-margin-top: 140px;
+    }
+
+    .dashboard-card img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .dashboard-card h2 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        padding: 12px;
+        font-size: 0.85rem;
+    }
+}
